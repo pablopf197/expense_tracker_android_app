@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_balance"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="96dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+
+        <TextView
+            android:id="@+id/text_balance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/balance_label"
+            android:textSize="28sp"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_balance_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_income_button"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingStart="40dp"
+        android:textAllCaps="false"
+        android:paddingEnd="40dp"
+        android:paddingVertical="14dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:icon="@drawable/baseline_add_24"
+        app:iconTint="@android:color/white"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:cornerRadius="30dp"
+        app:elevation="20dp"
+        app:backgroundTint="@color/green_gradient"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_balance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_expense_button"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingVertical="14dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:icon="@drawable/baseline_remove_24"
+        app:iconTint="@android:color/white"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:cornerRadius="30dp"
+        app:elevation="20dp"
+        app:backgroundTint="@color/red_gradient"
+        app:layout_constraintTop_toBottomOf="@id/button_add_income"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

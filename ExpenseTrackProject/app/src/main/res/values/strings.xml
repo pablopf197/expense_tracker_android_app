@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">ExpenseTrack</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_transaction_input">Transaction Input</string>
+    <string name="balance_label">Balance:</string>
+    <string name="add_income_button">Add Income</string>
+    <string name="add_expense_button">Add Expense</string>
+    <string name="text_balance_value">%.2f</string>
+    <string name="no_transactions">No transactions found</string>
+    <string name="currency_symbol">$</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="select_category">Select a Category</string>
+    <string name="select_currency">Select a Currency</string>
+    <string name="add_description">Add a description</string>
+    <string name="description">Description</string>
+    <string name="title_settings">Settings</string>
+    <string name="invalid_amount_error">Please enter a valid amount</string>
+    <string name="schedule_transaction">Schedule Transaction</string>
+
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="select_recurrence_type">Select recurrence type</string>
+    <string name="schedule">Schedule</string>
+    <string name="transaction_scheduled">Transaction scheduled!</string>
+    <string name="error_select_transaction_type">Please select Income or Expense</string>
+    <string name="error_select_recurrence">Please select a recurrence type</string>
+    <string name="none">None</string>
+    <string name="no_description">No description</string>
+    <string name="current_currency">Current Currency: </string>
+    <string name="change_currency">Change Currency</string>
+    <string name="category_icon">Category Icon</string>
+    <string-array name="recurrence_options">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+
+</resources>

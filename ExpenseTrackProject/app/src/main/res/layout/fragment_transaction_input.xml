@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/transactionTypeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/balance_positive"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/amountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_description"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="16dp"
+        android:maxLength="30"
+         />
+
+    <TextView
+        android:id="@+id/selectCategoryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_category"
+        android:textSize="16sp"
+        android:textColor="#00796B"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <!-- GridView to select a category -->
+    <GridView
+        android:id="@+id/categoryGridView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:numColumns="3"
+        android:layout_weight="1"/>
+
+</LinearLayout>
