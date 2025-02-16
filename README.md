@@ -1,5 +1,4 @@
-```markdown
-# Financial Management App
+# Expense Track App
 
 ## Description
 
